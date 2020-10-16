@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Semantix-Desafio.iml" filepath="$PROJECT_DIR$/.idea/Semantix-Desafio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioSemantix/desafioNasaLogs.iml" filepath="$PROJECT_DIR$/DesafioSemantix/desafioNasaLogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioSemantix/processLogs/processLogs.iml" filepath="$PROJECT_DIR$/DesafioSemantix/processLogs/processLogs.iml" />
+    </modules>
+  </component>
+</project>

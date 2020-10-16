@@ -19,7 +19,7 @@ object ParseFile {
 
   def parseHost(line : String) : String = {
 
-    //encontra o host na string. Host é a primeira parte da linha até o primeiro espaço
+    //Encontra o host na string. Host é a primeira parte da linha até o primeiro espaço;
     try {
       line.split(enums.spaceString).toList.head.trim
     } catch {
@@ -28,8 +28,8 @@ object ParseFile {
   }
 
   def parseDateRequest(line : String): String ={
-    //[02/Aug/1995:00:00:01 -0400]
-    //A data da request é iniciada no "[" até o "]", após identificar toda a string trunco a data para armazenar apenas DD/MON/YYYY
+
+    //A data da request é iniciada no "[" até o "]", após identificar toda a string trunco a data para armazenar apenas DD/MON/YYYY;
     try {
       Helpers.formatDate(
         line.substring(
@@ -42,7 +42,7 @@ object ParseFile {
 
 
   def parseRequest(line : String): (String,Int) ={
-    //"GET / HTTP/1.0"
+
     //Encontro a posição da primeira " e da segunda " na string;
     val positionStrarRequest = line.indexOf(enums.doubleQuoteChar, enums.positionOne) + 1
     val positionEndRequest = line.indexOf(enums.doubleQuoteChar, positionStrarRequest)

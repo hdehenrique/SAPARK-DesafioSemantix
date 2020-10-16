@@ -41,5 +41,4 @@ object FilterData {
                       .withColumnRenamed("sum(bytesSize)", "SUM OF RETURN BYTES")
   }
 
-
 }
